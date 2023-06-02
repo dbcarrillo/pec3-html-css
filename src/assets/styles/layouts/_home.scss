@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nav */
+/* Variables */
+
+@media (max-width: 768px) {
+  .menu-nav .li-nav {
+    @apply m-2;
+  }
+}
+/* Footer */
+
+@media (max-width: 768px) {
+  footer {
+    @apply bg-black h-[200px] w-full mt-auto;
+  }
+  ul {
+    @apply px-0 py-[5px];
+  }
+}
+
+/* Listado Bootstrap */
+
+@media (max-width: 620px) {
+  .articulo-uno {
+    @apply flex flex-col justify-center items-center text-center p-2.5;
+  }
+}
+
+  

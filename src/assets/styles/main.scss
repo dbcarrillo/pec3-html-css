@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+ @media (max-width: 768px) {
+    .menu-nav .li-nav {
+      @apply m-2;
+    }
+  }
+  /* Footer */
+  
+  @media (max-width: 768px) {
+    footer {
+      @apply bg-black h-[200px] w-full mt-auto;
+    }
+    ul {
+      @apply px-0 py-[5px];
+    }
+  }
+  
+  /* Listado Bootstrap */
+  
+  @media (max-width: 620px) {
+    .articulo-uno {
+      @apply flex flex-col justify-center items-center text-center p-2.5;
+    }
+  }
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+/* @import "some-node-module"; */
+/* @import "@some-company/some-node-module"; */
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+
+ @tailwind utilities;
+
+ @layer utilities {
+  h1, h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
